@@ -36,7 +36,7 @@ export function About2()
     const a=100;
 
     return <Fragment>
-        <div className="first">this is multi elements</div>
+        <div className="first">this is multi elements style</div>
         <h3 style={{color:'red',backgroundColor:"blue",fontSize:`${a}px`}}>heading three</h3>
         </Fragment>
 }
