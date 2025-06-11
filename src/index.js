@@ -10,6 +10,9 @@ import Errorpage from './modules/shares/Errorpage';
 import Welcomepage from './modules/dashboard/Welcomepage';
 import Profilepage from './modules/dashboard/Profilepage';
 import Mainpage from './modules/dashboard/Mainpage';
+import Homepage from './modules/dashboard/components/Homepage';
+import Aboutpage from './modules/dashboard/components/Aboutpage';
+import Contactpage from './modules/dashboard/components/Contactpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +25,10 @@ root.render(
         <Route path='dashboard' element={<Welcomepage/>}></Route>
         <Route path='dashboard/profile' element={<Profilepage/>}>
           <Route path='' element={<Mainpage/>}></Route>
+          <Route path='home' element={<Homepage/>}></Route>
+          <Route path='about' element={<Aboutpage/>}></Route>
+          <Route path='contact' element={<Contactpage/>}></Route>
+
           <Route path='price' element={<Mainpage/>}></Route>
 
           <Route path='*' element={<Errorpage/>}></Route>

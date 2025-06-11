@@ -1,18 +1,22 @@
+
+import One from '../shares/images/ipl.png';
+import Two from "../shares/images/img2.jpg";
+
 export const myapplist = [
     {
         appname:"profile",
         approut:"profile",
-        appicons:""
+        appicons:One
     },
     {
         appname:"Balance",
         approut:"balance",
-        appicons:""
+        appicons:Two
     },
     {
         appname:"Sales",
         approut:"salespage",
-        appicons:""
+        appiconsL:""
     },
     {
         appname:"profile",

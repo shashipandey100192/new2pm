@@ -13,7 +13,10 @@ function Welcomepage() {
         {myapplist.map((d)=>{
             return(
                 <Link to={d.approut} className='col-md-3 text-center border c-flex m-2 rounded'>
-            <div className='card userlogin'></div>
+                   
+            <div className='card userlogin'>
+                 <img src={d.appicons} alt='appiconsiamge' className="profilepic"/>
+            </div>
             <h5 className='mt-2'>{d.appname}</h5>
         </Link>
 
