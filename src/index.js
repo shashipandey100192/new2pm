@@ -13,6 +13,7 @@ import Mainpage from './modules/dashboard/Mainpage';
 import Homepage from './modules/dashboard/components/Homepage';
 import Aboutpage from './modules/dashboard/components/Aboutpage';
 import Contactpage from './modules/dashboard/components/Contactpage';
+import Productlistpage from './modules/dashboard/components/Productlistpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +29,7 @@ root.render(
           <Route path='home' element={<Homepage/>}></Route>
           <Route path='about' element={<Aboutpage/>}></Route>
           <Route path='contact' element={<Contactpage/>}></Route>
+            <Route path='productlist' element={<Productlistpage/>}></Route>
 
           <Route path='price' element={<Mainpage/>}></Route>
 
