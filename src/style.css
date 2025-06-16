@@ -239,3 +239,13 @@ button[type="submit"]:hover {
   height: 100%;
   border-radius: 50%;
 }
+
+.searchby
+{
+    width: 119px;
+    display: inline-block;
+}
+.searchby1
+{
+  width: 60%;
+}
