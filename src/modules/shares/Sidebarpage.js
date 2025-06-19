@@ -14,6 +14,7 @@ function Sidebarpage() {
               <li><Link to="contact" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Contact</Link></li>
                <li><Link to="productlist" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Product</Link></li>
                <li><Link to="graph" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Graph</Link></li>
+                <li><Link to="property" className="link-body-emphasis d-inline-flex text-decoration-none rounded">Props</Link></li>
                 </ul>
                </div> 
               </li>

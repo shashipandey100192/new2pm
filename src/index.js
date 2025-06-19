@@ -16,6 +16,7 @@ import Contactpage from './modules/dashboard/components/Contactpage';
 import Productlistpage from './modules/dashboard/components/Productlistpage';
 import Productdetailspage from './modules/dashboard/components/Productdetailspage';
 import Mygraphpage from './modules/dashboard/components/Mygraphpage';
+import Mainbranch from './modules/dashboard/components/Mainbranch';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -34,6 +35,7 @@ root.render(
             <Route path='productlist' element={<Productlistpage/>}></Route>
             <Route path='productlist/detailspage/:id' element={<Productdetailspage/>}></Route>
             <Route path='graph' element={<Mygraphpage/>}></Route>
+            <Route path='property' element={<Mainbranch/>}></Route>
 
           <Route path='price' element={<Mainpage/>}></Route>
 
