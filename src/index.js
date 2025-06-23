@@ -17,11 +17,15 @@ import Productlistpage from './modules/dashboard/components/Productlistpage';
 import Productdetailspage from './modules/dashboard/components/Productdetailspage';
 import Mygraphpage from './modules/dashboard/components/Mygraphpage';
 import Mainbranch from './modules/dashboard/components/Mainbranch';
+import { Provider } from 'react-redux';
+import { Mystore } from './reduxpage/Mystore';
+import Reduxpage from './reduxpage/Reduxpage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={Mystore}>
     <BrowserRouter>
       <Routes>
         <Route path='' element={<Loginpage/>}></Route>
@@ -36,6 +40,7 @@ root.render(
             <Route path='productlist/detailspage/:id' element={<Productdetailspage/>}></Route>
             <Route path='graph' element={<Mygraphpage/>}></Route>
             <Route path='property' element={<Mainbranch/>}></Route>
+            <Route path='reduxpage' element={<Reduxpage/>}></Route>
 
           <Route path='price' element={<Mainpage/>}></Route>
 
@@ -47,7 +52,7 @@ root.render(
         <Route path='*' element={<Errorpage/>}></Route>
       </Routes>
     </BrowserRouter>
-
+  </Provider>
   </React.StrictMode>
 );
 

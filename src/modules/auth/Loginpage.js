@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
  import { ToastContainer, toast } from 'react-toastify';
+ import { useSelector } from 'react-redux';
 
 
 
 
 
 function Loginpage() {
+  const count = useSelector((state) => state.counter.value);
 
 const [user, setuser]=useState("abc");
 const [pass, setpass]=useState("123");
@@ -45,7 +47,7 @@ const nav = useNavigate();
       <h2>Login</h2>
       <ToastContainer/>
       <div className="input-group">
-        <label for="email">Email</label>
+        <label for="email">Email {count}</label>
         <input type="email" id="email" required  onInput={userfunc} value={user}/>
       </div>
       <div className="input-group">
